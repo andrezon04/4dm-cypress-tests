@@ -1,4 +1,24 @@
 describe('Formulario', () => {
+    it('nao permite envio com os campos obrigatorios em branco', () => {
+        cy.login('4DM@gmail.com', '4DM')
+
+        cy.contains('Formulários')
+            .should('be.visible')
+            .click()
+
+        cy.get('form')
+            .should('be.visible')
+            .then(($formulario) => {
+                expect($formulario[0].checkValidity()).to.be.false
+            })
+
+        cy.get('button[type="submit"]')
+            .should('be.visible')
+            .click()
+
+        cy.get('form').should('be.visible')
+    })
+
     it('teste', () => {
        
         cy.login('4DM@gmail.com', '4DM')
