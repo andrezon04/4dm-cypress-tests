@@ -1,6 +1,6 @@
 Cypress.Commands.add('login', (email, password) => {
 
-    cy.visit('http://127.0.0.1:3000')
+    cy.visit('http://localhost:3000')
     cy.get('#email').type(email)
     cy.get('#password').type(password)
     cy.get('button[type="submit"]').click()

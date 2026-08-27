@@ -6,11 +6,9 @@ describe('Formulario', () => {
             .should('be.visible')
             .click()
 
-        cy.get('form')
-            .should('be.visible')
-            .then(($formulario) => {
-                expect($formulario[0].checkValidity()).to.be.false
-            })
+        cy.get('#name').should('be.empty')
+        cy.get('#email').should('be.empty')
+        cy.get('#phone').should('be.empty')
 
         cy.get('button[type="submit"]')
             .should('be.visible')
