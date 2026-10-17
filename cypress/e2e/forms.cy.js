@@ -1,5 +1,5 @@
-describe('Formulario', () => {
-    it('nao permite envio com os campos obrigatorios em branco', () => {
+describe('Formulário', () => {
+    it('não permite envio com os campos obrigatórios em branco', () => {
         cy.login('4DM@gmail.com', '4DM')
 
         cy.contains('Formulários')
@@ -14,10 +14,11 @@ describe('Formulario', () => {
             .should('be.visible')
             .click()
 
-        cy.get('form').should('be.visible')
+        cy.contains('O nome é obrigatório').should('be.visible')
+        cy.contains('O email é obrigatório').should('be.visible')
     })
 
-    it('teste', () => {
+    it('preenche os dados e seleciona as opções do formulário', () => {
        
         cy.login('4DM@gmail.com', '4DM')
 
@@ -115,3 +116,4 @@ describe('Formulario', () => {
             .should('be.checked')
     })
 })
+
