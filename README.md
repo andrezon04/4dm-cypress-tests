@@ -1,4 +1,18 @@
-# Testes de interface com Cypress
+<div align="center">
+
+# Testes de interface
+
+Cenários de login e formulários automatizados com Cypress.
+
+  <img alt="Cypress 15" src="https://img.shields.io/badge/Cypress%2015-1a1b27?style=flat-square" />
+  <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-1a1b27?style=flat-square" />
+  <img alt="E2E" src="https://img.shields.io/badge/E2E-1a1b27?style=flat-square" />
+
+**Projeto de estudo**
+
+</div>
+
+---
 
 Projeto de estudo de testes de ponta a ponta para fluxos de login e formulários. O repositório inclui a aplicação compilada em `dist/`, utilizada como alvo dos testes.
 
@@ -54,4 +68,3 @@ npx cypress run
 O cenário de preenchimento verifica interações e seleção de campos; não comprova a persistência dos dados nem a conclusão de um envio. As capturas de falha versionadas registram execuções anteriores e não representam o resultado de uma execução atual.
 
 Próximos passos: verificar o resultado final do envio, ampliar cenários negativos e automatizar a execução em integração contínua.
-
