@@ -16,6 +16,12 @@ Cenários de login e formulários automatizados com Cypress.
 
 Projeto de estudo de testes de ponta a ponta para fluxos de login e formulários. O repositório inclui a aplicação compilada em `dist/`, utilizada como alvo dos testes.
 
+## Foco técnico
+
+- Automação de interações com páginas e formulários usando Cypress.
+- Asserções para credenciais inválidas e campos obrigatórios.
+- Reutilização do fluxo de login por meio de um comando customizado.
+
 ## Tecnologias
 
 JavaScript, Cypress 15 e Serve.
