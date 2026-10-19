@@ -41,8 +41,8 @@ As credenciais usadas nos testes pertencem ao cenário de demonstração incluí
 Pré-requisitos: Node.js compatível com Cypress 15 (20, 22 ou 24+) e npm. A execução do Cypress também exige as bibliotecas de sistema indicadas pelo instalador.
 
 ```bash
-git clone https://github.com/andrezon04/4dm-cypress-tests.git
-cd 4dm-cypress-tests
+git clone https://github.com/andrezon04/4dm-cypress-e2e.git
+cd 4dm-cypress-e2e
 npm ci
 npm run dev
 ```
